@@ -28,23 +28,62 @@
 // ******************************************
 // Variable mutation and type coercion
 //*******************************************
-var firstName = 'John';
-var age = 28;
+// var firstName = 'John';
+// var age = 28;
+//
+// // Type coercion
+// console.log(firstName + ' ' + age);
+//
+// var job, isMarried;
+// job = 'teacher';
+// isMarried = false;
+//
+// console.log(firstName + ' is a ' + age + ' year old ' + job + '. Is he married? ' + isMarried);
+//
+// // Variable mutation
+// // Changeing value of a var after var is already declared with a value above in the code
+// age = 'twenty eight';
+// job = 'driver';
+// alert(firstName + ' is a ' + age + ' year old ' + job + '. Is he married? ' + isMarried);
+//
+// var lastName = prompt('What is his last Name?');
+// console.log(firstName + ' ' + lastName);
 
-// Type coercion
-console.log(firstName + ' ' + age);
+// ******************************************
+// Basic Operators
+//*******************************************
 
-var job, isMarried;
-job = 'teacher';
-isMarried = false;
+var year, yearJohn, yearMark;
+now = 2018;
+ageJohn = 28;
+ageMark = 33;
 
-console.log(firstName + ' is a ' + age + ' year old ' + job + '. Is he married? ' + isMarried);
+// Math operators
+var yearJohn = now - ageJohn;
+var yearMark = year - ageMark;
 
-// Variable mutation
-// Changeing value of a var after var is already declared with a value above in the code
-age = 'twenty eight';
-job = 'driver';
-alert(firstName + ' is a ' + age + ' year old ' + job + '. Is he married? ' + isMarried);
+console.log(yearJohn);
 
-var lastName = prompt('What is his last Name?');
-console.log(firstName + ' ' + lastName);
+console.log(now + 2);
+console.log(now * 2);
+console.log(now / 10);
+
+// Logical Operators
+var johnOlder = ageJohn > ageMark;
+console.log(johnOlder);
+// = false
+
+var johnOlder = ageJohn < ageMark;
+console.log(johnOlder);
+// = true
+//
+// typeOf operator
+console.log(typeof johnOlder);
+// = Boolean
+console.log(typeof ageJohn);
+// = number
+console.log(typeof 'Mark is older than John');
+// = string
+var x;
+console.log(typeof x);
+// = undefined
