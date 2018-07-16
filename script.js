@@ -296,16 +296,46 @@
 // falsy values: undefined, null, 0, '', NaN,
 // truthy values: Not falsy Values
 
-var height;
+// var height;
+//
+// height = 23;
+//
+// if (height || height === 0) {
+//       console.log('Variable is defined');
+// } else {
+//       console.log('Variable has NOT been defined');
+// }
+//
+// // Equality Operators
+// if (height === '23') {
+//       console.log('The == operator does type coercion!');
+//
+//******************************************
+// Coding Challenge 2
+//******************************************
 
-height = 23;
 
-if (height || height === 0) {
-      console.log('Variable is defined');
-} else {
-      console.log('Variable has NOT been defined');
-}
+// var teamJohn = (89 + 120 + 103) / 3;
+// // var teamJohn = (89 + 120 + 133) / 3;
+// console.log(teamJohn);
+// var teamMike = (116 + 94 + 123) / 3;
+// console.log(teamMike);
+// var teamMary = (97 + 134 + 105) / 3;
 
-// Equality Operators
-if (height === '23') {
-      console.log('The == operator does type coercion!');
+// if (teamJohn > teamMike) {
+//       console.log('John\'s team wins with an average score of ' + teamJohn);
+// } else if {
+//       console.log('Mike\'s team wins with an average score of ' + teamMike);
+// } else {
+//       console.log('There is a draw');
+// }
+
+// if (teamJohn > teamMike && teamJohn > teamMary) {
+//      console.log('John\'s team wins with an average score of ' + teamJohn);
+// } else if (teamMike > teamJohn && teamMike > teamMary) {
+//      console.log('Mike\'s team wins with an average score of ' + teamMike);
+// } else if (teamMary > teamJohn && teamMary > teamMike) {
+//      console.log('Mary\'s team wins with an average score of ' + teamMary);
+// } else {
+//      console.log('There is a draw');
+// }
