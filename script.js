@@ -369,5 +369,27 @@
 // yearsUntilRetirement(1969, 'Jane');
 
 //******************************************
-// Functions Statementsand Expressions
+// Functions, Statements and Expressions
 //******************************************
+// Function Declaration must begin with function
+// function whatDoYouDo(job, firstName) {}
+//
+// A Statement is any line entered into a JavaScript file or script
+
+// Function Expressions = returns a value...unlike a Function Statements
+// var whatDoYouDo = function(job, firstName) {
+//       switch(job) {
+//             case 'teacher':
+//                   return firstName + ' teaches kids how to code.';
+//             case 'driver':
+//                   return firstName + ' drives a cab in Boulder.';
+//             case 'designer':
+//                   return firstName + ' designs web sites.';
+//             default:
+//                   return firstName + ' does something else';
+//       }
+// }
+//
+// conslole.log(whatDoYouDo('teacher', 'John'));
+// conslole.log(whatDoYouDo('designer', 'Jane'));
+// conslole.log(whatDoYouDo('retired', 'Mark'));
