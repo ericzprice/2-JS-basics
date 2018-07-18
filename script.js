@@ -393,3 +393,58 @@
 // conslole.log(whatDoYouDo('teacher', 'John'));
 // conslole.log(whatDoYouDo('designer', 'Jane'));
 // conslole.log(whatDoYouDo('retired', 'Mark'));
+
+//******************************************
+// Arrays
+//******************************************
+
+// INITIALIZE NEW ARRAY
+var names = ['john', 'Mark', 'Jane'];
+var years = new Array(1990, 1969, 1948);
+console.log(names[2]);
+console.log(names.length);
+
+// MUTATE ARRAY DATA
+// Changing the value of the index of 1 in the array, so Mark will be replaced with Ben and Mark is gone
+names[1] = 'Ben';
+console.log(names);
+
+// Adding a new index to the array, specifying where you want it to be placed. Only effective if you know the contents of the array already,
+names[5] = 'Mary';
+console.log(names);
+
+// alternatively you can just add a new index to the array knowing that you are doing so at the end of the array, so youre not accidentally replacing the data.
+names[names.length] = 'Mary';
+console.log(names);
+
+// DIFFERNET DATA types
+var john = ['John','Smith', 1990, 'teacher', false]
+
+john.push('blue');
+console.log(john);
+// .push method - has hidden code to make it work and would otherwise take 4 more lines of code
+
+john.push('blue');
+john.unshift('Mr.');
+console.log(john);
+// .unshift adds and element to the beggining of the array
+
+john.pop();
+john.pop();
+// .pop removes element from the end of the array and a ssecond line john.pop() removes the second from the end
+john.shift();
+console.log(john);
+// removes element from the beggining of the ARRAY
+
+console.log(john.indexOf(1990));
+// returns position of the data that is entered into parantheses
+
+// If we ask the indexOf method to reutrn the index of a value that does not exist in th array, it will return -1
+console.log(john.indexOf(23));
+
+var isDesigner = john.indexOf('designer') === -1 ? 'John is NOT a designer' : 'John IS a designer';
+console.log(isDesigner)
+// ? -is a shorter way of writing an if/else statement.
+// returns 'John is NOT a designer' bc it's not listed in the array
+// you have to make it a variable bc otherwise it's not going to return anything to the console, just like you had to do that w console logging the indexOf above with the year 1990.
+// It will store the data, but in order to see the result of the if/else statement, you have to print it somewhere. In this case, youre printing it to the console.
