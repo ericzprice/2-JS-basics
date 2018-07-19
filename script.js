@@ -454,7 +454,9 @@
 // Coding Challenge 3
 //******************************************
 
-// Our Solution
+// Our Solution is an Expression and his is a Declaration
+//
+//
 // var tipAmount = function (total) {
 //       if (total < 50) {
 //             return total * 0.2;
@@ -473,28 +475,66 @@
 // var totalBill = [142.6, 57.6, 294.8];
 
 // Challenge solution
-function tipCalculator(bill) {
-      var percentage;
-      if (bill < 50) {
-            percentage = .2;
-      } else if (bill >= 50 && bill < 200) {
-            percentage = .15;
-      } else {
-            percentage = .1;
-      }
-      return percentage * bill;
-}
+// function tipCalculator(bill) {
+//       var percentage;
+//       if (bill < 50) {
+//             percentage = .2;
+//       } else if (bill >= 50 && bill < 200) {
+//             percentage = .15;
+//       } else {
+//             percentage = .1;
+//       }
+//       return percentage * bill;
+// }
+//
+// var bills = [124, 48, 268];
+// var tips = [
+//       tipCalculator(bills[0]),
+//       tipCalculator(bills[1]),
+//       tipCalculator(bills[2])
+// ];
+// var finalValues = [
+//       bills[0] + tips[0],
+//       bills[1] + tips[1],
+//       bills[2] + tips[2],
+// ];
+//
+// console.log(tips, finalValues);
 
-var bills = [124, 48, 268];
-var tips = [
-      tipCalculator(bills[0]),
-      tipCalculator(bills[1]),
-      tipCalculator(bills[2])
-];
-var finalValues = [
-      bills[0] + tips[0],
-      bills[1] + tips[1],
-      bills[2] + tips[2],
-];
 
-console.log(tips, finalValues);
+//******************************************
+// Objects and Properties
+//******************************************
+
+// THERE ARE TWO WAYS OF CREATING NEW OBJEXTS, OBJECT LITERAL AND NEW OBJECT SYNTAX
+// 1-OBJECT LITERAL
+var john = {
+      firstName: 'John',
+      lastName: 'Smith',
+      birthYear: 1990,
+      family: ['Jane', 'Mark', 'Bob', 'Emily'],
+      job: 'teacher',
+      isMarried: false
+};
+
+// logging to the console the entire John object, displaying all properties and values
+console.log(john);
+
+// Multiple ways to log one property and its value, but the first way can be used to get all the results
+console.log(john.firstName);
+console.log(john['lastName']);
+var x = 'birthYear';
+console.log(john[x]);
+
+// Mutating or also known as changing data
+john.job = 'designer';
+john['isMarried'] = true;
+console.log(john);
+
+//2- NEW OBJECT SYNTAX
+
+var jane = new Object();
+jane.firstName = 'Jane';
+jane.birthYear = 1969;
+jane[lastName] = 'Smith';
+console.log(jane);
